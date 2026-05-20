@@ -10,7 +10,7 @@ import tensorflow as tf
 # Activation function: sigma(x) = x^3
 # Learn:
 # f(x,y,z,w) = x^3 + y^3 + z^3
-# BASE CODE FROM: https://www.geeksforgeeks.org/deep-learning/neural-networks-a-beginners-guide/
+# INSPO CODE FROM: https://www.geeksforgeeks.org/deep-learning/neural-networks-a-beginners-guide/
 # --------------------------------------------------
 
 # ACTIVATION FUNCTION
