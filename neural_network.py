@@ -3,6 +3,7 @@ import pandas as pd
 from keras.models import Sequential
 from keras.layers import Dense
 import tensorflow as tf
+import random
 
 # --------------------------------------------------
 # POLYNOMIAL NEURAL NETWORK
@@ -21,6 +22,13 @@ def cubic_activation(x):
 # --------------------------------------------------
 # GENERATE TRAINING DATA
 # --------------------------------------------------
+# set seeds for consistency
+SEED = 42
+random.seed(SEED)
+np.random.seed(SEED)
+tf.random.set_seed(SEED)
+
+
 # 1000 random samples
 X = np.random.uniform(-1, 1, size=(1000, 4))
 
@@ -61,7 +69,7 @@ model.fit(
     X,
     y,
     epochs=200,
-    batch_size=32,
+    batch_size=25,
     verbose=1
 )
 
